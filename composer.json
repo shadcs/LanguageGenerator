@@ -1,0 +1,28 @@
+{
+    "name": "shadcs/lang-generator",
+    "description": "translate laravel package languages to any language.",
+    "require": {
+        "php": ">=8.2",
+        "illuminate/support": "11.34.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Shadcs\\LangGenerator\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shadcs\\LangGenerator\\LangGeneratorServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "shadcs",
+            "email": "shad.designer@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
