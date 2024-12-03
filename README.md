@@ -4,6 +4,10 @@
 
 Translate language files from one language to another using Google Translate.
 
+## Install
+```bash
+composer require shadcs/lang-generator
+```
 
 ## How to use it
 
