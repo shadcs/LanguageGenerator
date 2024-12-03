@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Http;
 class LanguageGenerator extends Command
 {
     protected $name = 'lang-translate';
-    protected $signature = 'lang:lang-translate {from} {to*} {--source_path=} {--destination_path=}';
+    protected $signature = 'lang-translate {from} {to*} {--source_path=} {--destination_path=}';
     protected $description = 'Translate language files from one language to another using Google Translate';
 
     public function handle()
@@ -40,7 +40,7 @@ class LanguageGenerator extends Command
         }
 
         foreach ($targets as $to) {
-            $this->info("\n\n 🔔 Translate to '{$to}'");
+            $this->info("\n\n 🚀 Translate to '{$to}'");
 
             $bar = $this->output->createProgressBar(count($filesToProcess));
             $bar->setFormat(" %current%/%max% [%bar%] %percent:3s%% -- %message%");
@@ -50,7 +50,7 @@ class LanguageGenerator extends Command
             foreach ($filesToProcess as $fileInfo) {
                 $filePath = $fileInfo['relativePathname'];
 
-                $bar->setMessage("🔄 Processing: {$filePath}");
+                $bar->setMessage("⏳ Processing: {$filePath}");
                 $bar->display();
 
                 $translations = include $fileInfo['path'];
@@ -67,7 +67,7 @@ class LanguageGenerator extends Command
 
                 $bar->advance();
 
-                $bar->setMessage("✅");
+                $bar->setMessage("💯");
             }
 
             $bar->finish();
