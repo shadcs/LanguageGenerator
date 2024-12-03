@@ -2,7 +2,7 @@
     "name": "shadcs/lang-generator",
     "description": "Translate language files from one language to another using Google Translate.",
     "require": {
-        "php": ">=8.2",
+        "php": "^8.2",
         "illuminate/support": "^11.34.2"
     },
     "license": "MIT",
