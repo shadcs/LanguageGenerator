@@ -37,7 +37,7 @@ php artisan lang-translate en ckb --source_path=en
 ```
 - Multiple output
 ```bash
-php artisan lang-translate enckb ar fr pt-PT pt-BR zh-CN --source_path=en
+php artisan lang-translate en ckb ar fr pt-PT pt-BR zh-CN --source_path=en
 ```
 - If you are using json translation
 ```bash
