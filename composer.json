@@ -1,6 +1,6 @@
 {
     "name": "shadcs/lang-generator",
-    "description": "translate laravel package languages to any language.",
+    "description": "Translate language files from one language to another using Google Translate.",
     "require": {
         "php": ">=8.2",
         "illuminate/support": "11.34.2"
@@ -20,7 +20,7 @@
     },
     "authors": [
         {
-            "name": "shadcs",
+            "name": "Shad Y. Abdalla",
             "email": "shad.designer@gmail.com"
         }
     ],
