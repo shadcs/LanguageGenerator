@@ -24,5 +24,6 @@
             "email": "shad.designer@gmail.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
